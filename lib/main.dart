@@ -16,6 +16,29 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.green,
           centerTitle: true,
         ),
+        body: Center(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Expanded(
+                child: TextButton(
+                  child: Image(image: AssetImage('images/dice-six-faces-one.png')),
+                  onPressed: (){
+                    print("Hello");
+                  },
+                ),
+              ),
+              Expanded(
+                child: TextButton(
+                  child: Image(image: AssetImage('images/dice-six-faces-two.png')),
+                  onPressed: (){
+                    print("Hi");
+                  },
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
